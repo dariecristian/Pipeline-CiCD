@@ -1,0 +1,14 @@
+version: "3"
+services:
+    user-service:
+        build:
+            context: ./user-service
+        image: user-service:latest
+    product-service:
+        build:
+            context: ./product-service
+        image: product-service:latest
+    order-service:
+        build:
+            context: ./order-service
+        image: order-service:latest

@@ -1,0 +1,11 @@
+version: "3"
+services:
+    unit-tests:
+        image: user-service:latest
+        command: npm test
+    integration-tests:
+        image: product-service:latest
+        command: npm run integration-test
+    regression-tests:
+        image: order-service:latest
+        command: npm run regression-test
